@@ -31,7 +31,7 @@ namespace ConsoleApp1
         }
         public bool Contains(string choice) // metod för att kontrollera om en siffra finns på board
         {
-            return Array.Exists(board, element => element == choice);
+            return Array.Exists(board, element => element == choice); // board är arrayen som metoden kommer söka igenom (element i arrayen = värdet choice)
         }
         public bool IsFull() // metod för att kolla om board är fullt (för tie)
         {
