@@ -47,6 +47,7 @@ namespace ConsoleApp1
 
                     if (checkVictory.IsVictory(board.Board)) // Kontrollerar om någon har vunnit
                     {
+                        Console.Clear(); // tar bort föregående board och visar nya resultatet
                         board.PrintBoard();
                         Console.WriteLine(CurrentPlayer ? "Player X wins!" : "Player O wins!");
                         break;
@@ -56,6 +57,7 @@ namespace ConsoleApp1
                 }
                 if (board.IsFull())
                 {
+                    Console.Clear(); // tar bort föregående board och visar nya resultatet
                     board.PrintBoard(); // skriver ut slutresultatet på board
                     Console.WriteLine("It´s a tie!");
                     break ;
