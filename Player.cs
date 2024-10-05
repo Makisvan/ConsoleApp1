@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     class Player
     {
-        bool CurrentPlayer = true;
+        bool CurrentPlayer = true; // skapar variabel CurrentPlayer och ger den värdet True
         CheckVictory checkVictory = new CheckVictory(); // instans av CheckVictory klassen
         
         
