@@ -19,7 +19,7 @@ namespace ConsoleApp1
             while (true)
             {
                 Console.Clear(); // tar bort föregående board så det blir snyggt
-                board.PrintBoard(); // printar board
+                board.PrintBoard(); // printar board med uppdaterade val
 
                 if (CurrentPlayer) // if sats för att se vems tur det är
                 {
