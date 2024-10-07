@@ -54,6 +54,14 @@ namespace ConsoleApp1
                     }
 
                     CurrentPlayer = !CurrentPlayer; // För att byta spelare
+
+                }
+                else
+                {
+                    // Om spelaren angav ett ogiltigt val eller en upptagen plats. Detta kommer bara visas om man tar bort Console.Clear på rad 21!
+                    Console.WriteLine("Felaktig input! Platsen är antingen tagen eller så har du skrivit in fel värde. Välj ett nummer mellan 1 - 9.");
+                    Console.WriteLine("Tryck valfri tangent för att försöka igen..");
+                
                 }
                 if (board.IsFull())
                 {
