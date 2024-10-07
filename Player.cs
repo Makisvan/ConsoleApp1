@@ -23,11 +23,11 @@ namespace ConsoleApp1
 
                 if (CurrentPlayer) // if sats för att se vems tur det är
                 {
-                    Console.WriteLine("Player X turn!");
+                    Console.WriteLine("Player X choose a number between (1-9)");
                 }
                 else
                 {
-                    Console.WriteLine("Player O turn!");
+                    Console.WriteLine("Player O choose a number between (1-9)");
                 }
 
                 string choice = Console.ReadLine(); // spelarens val av nummer på board
